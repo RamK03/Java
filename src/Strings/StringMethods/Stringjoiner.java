@@ -1,4 +1,4 @@
-package Strings;
+package Strings.StringMethods;
 import java.util.StringJoiner;
 public class Stringjoiner
 {
