@@ -22,13 +22,15 @@ public class permutationsOfTheString
         {
             System.out.println(str);
         }
-        else{
-        for(int i=start;i<end;i++)
+        else
         {
-          str=  swap(str, start, i);
-          permute(str,start+1,end);
-          swap(str, start, i);
-        }}
+            for(int i=start;i<end;i++)
+            {
+              str=  swap(str, start, i);
+              permute(str,start+1,end);
+              swap(str, start, i);
+            }
+        }
 
     }
 
@@ -37,7 +39,5 @@ public class permutationsOfTheString
         String s="ABC";
         int len=s.length();
         permute(s,0,len);
-
-
     }
 }

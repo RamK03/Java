@@ -6,7 +6,7 @@ public class Anagram
     public static void main(String[] args)
     {
         String s1="grab";
-        String s2="brg";
+        String s2="brag";
 
         if(s1.length()!=s2.length())
         {
