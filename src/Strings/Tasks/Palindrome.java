@@ -8,10 +8,10 @@ public class Palindrome
     {
         String s="aaba";
         StringBuffer sc= new StringBuffer(s);
-        StringBuffer sr= new StringBuffer();
-        sr=sc.reverse();
+        StringBuffer sr =sc.reverse();
+
         System.out.println(sr);
-        if(sc.equals(sr))
+        if(sc.contentEquals(sr))
         {
             System.out.println("It is palindrome");
         }
@@ -29,9 +29,12 @@ public class Palindrome
         char c= c1[0];
         for(int i=0;i<s.length()-1;i++)
         {
+            c=c1[i];
             c1[i]=c1[--len];
+            c1[len]=c;
+
         }
-        c1[s.length()-1]=c;
+        System.out.println(Arrays.toString(c1));
 
         if(s.equalsIgnoreCase(String.valueOf(c1)))
         {
