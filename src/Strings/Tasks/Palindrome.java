@@ -4,14 +4,11 @@ import java.util.Arrays;
 
 public class Palindrome
 {
-    void reverseMethod()
+   static void reverseMethod()
     {
         String s="aaba";
-        StringBuffer sc= new StringBuffer(s);
-        StringBuffer sr =sc.reverse();
-
-        System.out.println(sr);
-        if(sc.contentEquals(sr))
+        StringBuffer sr =new StringBuffer(s).reverse();
+        if(s.contentEquals((sr)))
         {
             System.out.println("It is palindrome");
         }
@@ -22,7 +19,7 @@ public class Palindrome
     }
     public static void main(String[] args)
     {
-
+        reverseMethod();
         String s="Kayak";
         int len=s.length();
         char [] c1=s.toCharArray();
