@@ -11,7 +11,7 @@ public class LongestSequnceInString
                 if(s1.charAt(i)!=s2.charAt(i))
                 {
                     return s1.substring(0,i);
-            }
+                }
         }
         return s1.substring(0,minLength);
     }
