@@ -1,7 +1,7 @@
 package BasicProblems;
 
-public class FiboDOWhile {
-
+public class FiboDOWhile
+{
     void calcii(int n){
         int num1=0;
         int num2=1;
@@ -16,8 +16,9 @@ public class FiboDOWhile {
            range++;
         }while(range<=n);
     }
-    public static void main (String []args){
-        FiboDOWhile fd =new FiboDOWhile();
-        //fd.calcii(10);
+    public static void main (String []args)
+    {
+        FiboDOWhile fd = new FiboDOWhile();
+        fd.calcii(20);
     }
 }
