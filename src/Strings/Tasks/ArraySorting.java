@@ -19,7 +19,6 @@ public class ArraySorting
                     s1[i]=s1[j];
                     s1[j]=temp;
                 }
-
             }
         }
         System.out.println(Arrays.toString(s1));

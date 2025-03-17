@@ -37,7 +37,7 @@ class Switch
         switch(m)
         {
             case int n when (n==100) ->System.out.println("O");
-            case int n when (n>=90&&n<100) ->System.out.println("A");
+            case int j when (j>=90&&j<100) ->System.out.println("A");
             case int n when (n>=80&&n<90)->System.out.println("B");
             case int n when (n>=70&&n<80)->System.out.println("C");
             case int n when (n>=60&&n<50)->System.out.println("D");
