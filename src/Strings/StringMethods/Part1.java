@@ -19,7 +19,8 @@ public class Part1
         System.out.println(s1.substring(0,2));
 
         //concat()
-        System.out.println(s1.concat(" Hi"));
+        s1.concat(" Hi");
+        System.out.println(s1.concat(" Hi")+" "+s1);
 
         //indexOf()
         System.out.println(s1.indexOf("R"));

@@ -10,7 +10,7 @@ public class ReverseOfTheString
 
         for(int j=0;j<s.length()/2;j++)
         {
-              temp=  s1[j];
+              temp= s1[j];
               s1[j]=s1[--len];
               s1[len]=temp;
         }

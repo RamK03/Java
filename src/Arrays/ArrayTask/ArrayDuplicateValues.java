@@ -27,9 +27,24 @@ public class ArrayDuplicateValues {
         System.out.println(Arrays.toString(duplicate_values));
     }
 
+
+    void duplicateValue1()
+    {
+        for(int i=0;i<original_Array.length-1;i++)
+        {
+            if(check_Array[i])continue;
+            if(original_Array[i]==original_Array[i+1])
+            {
+                System.out.println("Duplicate Values"+original_Array[i]);
+                check_Array[i+1]=true;
+            }
+        }
+    }
+
     public static void main(String []args )
     {
         ArrayDuplicateValues ac=new ArrayDuplicateValues();
-        ac.duplicateValues();
+        ac.duplicateValue1();
+
     }
 }
