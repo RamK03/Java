@@ -1,10 +1,16 @@
 package BasicProblems;
 
 public class DiamondNew {
-    public  void main(String[] args)
+
+    public static void main(String []arfs)
+    {
+        main();
+        main("");
+    }
+    public static void main(String args)
     {
         int rows=8;
-        for(int i=1;i<=8;i++)
+        for(int i=1;i<=rows;i++)
         {
             for(int j=rows;j>=i;j--)
             {
@@ -24,9 +30,9 @@ public class DiamondNew {
             }
             System.out.println();
         }
-        for(int i=8;i>=1;i--)
+        for(int i=rows;i>=1;i--)
         {
-            for(int j=i;j<=8;j++)
+            for(int j=i;j<=rows;j++)
             {
                 System.out.print(" ");
             }
@@ -43,5 +49,37 @@ public class DiamondNew {
             }
             System.out.println();
         }
+    }
+
+
+
+
+    public static void main() {
+        int rows = 8;
+
+        // Upper half
+        for (int i = 1; i <= rows; i++) {
+            printSpaces(rows - i);
+            printHollowLine(i);
+        }
+
+        // Lower half
+        for (int i = rows; i >= 1; i--) {
+            printSpaces(rows - i);
+            printHollowLine(i);
+        }
+    }
+
+    static void printSpaces(int count) {
+        for (int i = 0; i < count; i++)
+            System.out.print(" ");
+    }
+
+    static void printHollowLine(int row) {
+        for (int i = 1; i <= 2 * row - 1; i++) {
+            if (i == 1 || i == 2 * row - 1) System.out.print("*");
+            else System.out.print(" ");
+        }
+        System.out.println();
     }
 }

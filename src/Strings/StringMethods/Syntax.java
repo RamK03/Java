@@ -2,6 +2,7 @@ package Strings.StringMethods;
 
 public class Syntax
 {
+   static int a;
     public static void main (String []args)
     {
         //char array to String
@@ -28,5 +29,7 @@ public class Syntax
         System.out.println(t==r);
 
 
+
     }
+
 }

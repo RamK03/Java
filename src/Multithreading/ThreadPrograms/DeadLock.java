@@ -10,7 +10,7 @@ public class DeadLock {
 
                 try { Thread.sleep(100); } catch (Exception e) {}
 
-                synchronized (resource2) {
+                synchronized (resource1) {
                     System.out.println("Thread 1 locked resource 2");
                 }
             }

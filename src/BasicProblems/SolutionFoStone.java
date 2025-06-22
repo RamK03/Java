@@ -5,7 +5,7 @@ import java.util.*;
 public class SolutionFoStone
 {
 
-        public int lastStoneWeight(int[] stones) {
+        public static int lastStoneWeight(int[] stones) {
             int n= stones.length-1;
             int weight=0;
             for(int i=0;i<n;i++)
@@ -30,6 +30,10 @@ public class SolutionFoStone
             }
             return stones[n];
         }
+
+    public static void main(String[] args) {
+        System.out.println(lastStoneWeight(new int[]{1,2,2,34,2,21,4}));
+    }
 
 }
 
